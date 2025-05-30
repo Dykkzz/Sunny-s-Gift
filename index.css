@@ -100,6 +100,26 @@ body {
   background-color: #ff3467;
 }
 
+.btn,
+#revealBtn {
+  transition:
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+  /* Add transform transition */
+}
+
+.btn:hover,
+#revealBtn:hover,
+.btn:focus-visible,
+#revealBtn:focus-visible {
+  transform: translateY(-6px) scale(1.05);
+  /* Slightly lift and pop up */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  /* Add a shadow for depth */
+}
+
 @media (max-width: 600px) {
   .greetingfont {
     font-size: 60px;
