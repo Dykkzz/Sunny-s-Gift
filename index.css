@@ -25,7 +25,11 @@ body {
 }
 
 .btnl {
-  margin-left: 10px;
+  /* margin-left: 10px; */
+}
+
+.btnr {
+  margin-right: 12px;
 }
 
 .btn {
