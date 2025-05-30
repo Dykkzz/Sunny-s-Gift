@@ -1,0 +1,102 @@
+* html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #68507B;
+}
+
+.greetingfont {
+
+  font-size: 100px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.greetfontfoot {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttonsec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.btnl {
+  margin-left: 10px;
+}
+
+.btn {
+  background-color: #8D769A;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #46315C;
+  color: white;
+}
+
+.btn,
+.btn:active,
+.btn:focus,
+.btn:focus-visible {
+  background-color: #8D769A !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn:hover,
+.btn:active:hover,
+.btn:focus:hover {
+  background-color: #46315C !important;
+  color: white !important;
+}
+
+.hidden-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s;
+  padding: 0 1rem;
+  background: #8D769A;
+  color: white;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* When revealed */
+.hidden-text.show {
+  max-height: 200px;
+  /* Adjust as needed */
+  padding: 1rem;
+}
+
+#revealBtn {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem 2rem 1rem 1rem / 2rem 2rem 1rem 1rem;
+  /* More horizontal pill shape */
+  background-color: rgb(187, 0, 187);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background 0.2s;
+}
+
+#revealBtn:hover {
+  background-color: #ff3467;
+}
+
+@media (max-width: 600px) {
+  .greetingfont {
+    font-size: 60px;
+  }
+
+  .buttonsec {
+    margin-top: 150px;
+  }
+}
