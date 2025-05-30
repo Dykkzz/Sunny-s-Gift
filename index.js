@@ -1,7 +1,7 @@
 function showMultipleAlerts() {
   const messages = [
     "Halo Sun,..",
-    "Hope you enjoy it",
+    "Hope you like it",
     "Have a nice day pretty girl"
   ];
   for (let i = 0; i < messages.length; i++) {
@@ -10,11 +10,11 @@ function showMultipleAlerts() {
 }
 
 // Reveal hidden text on click
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("revealBtn");
   const hiddenText = document.getElementById("hiddenText");
 
-  btn.addEventListener("click", function() {
+  btn.addEventListener("click", function () {
     hiddenText.classList.toggle("show");
   });
 
