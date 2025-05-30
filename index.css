@@ -13,6 +13,7 @@ body {
 }
 
 .greetfontfoot {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -22,19 +23,23 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .btnl {
   /* margin-left: 10px; */
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .btnr {
-  margin-right: 12px;
+  margin-right: 10px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
   background-color: #8D769A;
   border: none;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .btn:hover {
