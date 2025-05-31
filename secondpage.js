@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     yesScale = 1;
     yesBtn.style.transform = 'scale(1)';
     alert('Thank you! ❤️');
-    window.location.href = 'https://www.example.com/'; // Change to your desired URL
+    window.location.href = 'thirdpage.html'; // Change to your desired URL
   });
 });
