@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   yesBtn.addEventListener('click', function () {
     alert('Thank you! ❤️');
-    window.location.href = 'https://www.example.com/'; // Change to your desired URL
+    // Redirect to another page with a unique query parameter to force a full refresh
+    window.location.href = 'thirdpage.html?refresh=' + Date.now(); // Change 'thirdpage.html' to your target page
   });
 });
