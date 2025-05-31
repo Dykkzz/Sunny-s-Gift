@@ -169,6 +169,16 @@ body::-webkit-scrollbar {
   opacity: 0.3;
 }
 
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
 .wave-bottom {
   position: absolute;
   left: 0;
@@ -186,4 +196,9 @@ body::-webkit-scrollbar {
   /* This selector works if .wave-bottom is a sibling after .hidden-text */
   transform: translateY(120px);
   /* Move down by the height of the revealed text */
+}
+
+.container.text-center {
+  position: relative;
+  z-index: 1;
 }

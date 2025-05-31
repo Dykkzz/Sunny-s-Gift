@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const isVisible = hiddenText.classList.contains("show");
     hiddenText.classList.toggle("show");
     if (!isVisible) {
-      alert("Hello from the middle button!");
+      alert("SCROLL DOWN PLEASE :)");
       hiddenText.scrollIntoView({ behavior: "smooth", block: "start" });
       waveBottom.style.transform = "translateY(120px)";
     } else {
