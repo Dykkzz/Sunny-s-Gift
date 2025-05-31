@@ -15,7 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const hiddenText = document.getElementById("hiddenText");
 
   btn.addEventListener("click", function () {
+    const isVisible = hiddenText.classList.contains("show");
     hiddenText.classList.toggle("show");
+    if (!isVisible) {
+      alert("SCROLL DOWN PLEASE :)");
+      hiddenText.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   });
 
   // Optional: reveal on hover
