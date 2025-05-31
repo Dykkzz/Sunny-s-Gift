@@ -136,6 +136,14 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 600px) {
+  body {
+    padding-top: 10px;
+  }
+
+  .container.text-center {
+    margin-top: 2.5rem !important;
+  }
+
   .greetingfont {
     font-size: 75px;
   }
