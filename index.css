@@ -91,11 +91,39 @@ body::-webkit-scrollbar {
   margin-top: 1rem;
 }
 
+.btnrvl {
+  background-color: #8a52aa;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: 'comfortaa';
+  font-weight: bold;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  transition:
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+  /* Add transform transition for animation */
+}
+
+.btnrvl:hover,
+.btnrvl:focus-visible {
+  background-color: #663a96;
+  color: white;
+  transform: translateY(-6px) scale(1.08);
+  /* Slightly lift and pop up more than .btn */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  /* Slightly stronger shadow */
+}
+
 /* When revealed */
 .hidden-text.show {
   max-height: 200px;
   /* Adjust as needed */
   padding: 1rem;
+  border-radius: 20px;
 }
 
 #revealBtn {
@@ -104,7 +132,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2rem 2rem 1rem 1rem / 2rem 2rem 1rem 1rem;
+  border-radius: 2rem 2rem 1rem 1rem;
   /* More horizontal pill shape */
   background-color: rgb(187, 0, 187);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
