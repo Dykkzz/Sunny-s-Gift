@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Auto-refresh logic (only once)
+  // Disable browser caching using meta tags (for HTML) and force reload once using sessionStorage
   if (!sessionStorage.getItem('secondpageRefreshed')) {
     sessionStorage.setItem('secondpageRefreshed', 'true');
-    location.reload();
+    // Add cache-busting query param to force reload from server
+    location.replace(window.location.pathname + '?nocache=' + Date.now());
     return;
   }
 
