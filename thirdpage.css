@@ -1,0 +1,117 @@
+* html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #68507B;
+}
+
+.wave-top img,
+.wave-bottom img {
+  opacity: 0.3;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.wave-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+  line-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.2;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.conbox {
+  background-color: #8d769a;
+  border-width: 5px;
+  border-color: #554369;
+  border-radius: 20px;
+}
+
+.btnp {
+  border-width: 3px;
+  border-radius: 15px;
+}
+
+.btnn {
+  background-color: #ac81c5;
+  border-color: #7b6a8f;
+  border-width: 3px;
+  border-radius: 15px;
+}
+
+.btnn:hover,
+.btnn:hover:active {
+  background-color: #b28cd0;
+  border-color: #8c7a9f;
+}
+
+.book-text {
+  font-size: 15px;
+  font-family: 'Comfortaa';
+  color: white;
+  min-height: 80px;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-text.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.book-text.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#prevBtn {
+  min-width: 90px;
+  transition: opacity 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .book-text {
+    font-size: 13px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Satisfy';
+  src: url('fonts/Satisfy-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('fonts/Comfortaa-VariableFont_wght.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
