@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Auto-refresh logic (only once)
+  if (!sessionStorage.getItem('secondpageRefreshed')) {
+    sessionStorage.setItem('secondpageRefreshed', 'true');
+    location.reload();
+    return;
+  }
+
   const yesBtn = document.getElementById('yesBtn');
   const noBtn = document.getElementById('noBtn');
   let yesScale = 1;
