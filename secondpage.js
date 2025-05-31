@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   yesBtn.addEventListener('click', function () {
+    yesScale = 1;
+    yesBtn.style.transform = 'scale(1)';
     alert('Thank you! ❤️');
-    // Redirect to another page with a unique query parameter to force a full refresh
-    window.location.href = 'thirdpage.html?refresh=' + Date.now(); // Change 'thirdpage.html' to your target page
+    window.location.href = 'https://www.example.com/'; // Change to your desired URL
   });
 });
