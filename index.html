@@ -12,8 +12,13 @@
   </head>
 
   <body>
+    <!-- Top wave decoration using SVG file -->
+    <div class="wave-top position-absolute top-0 start-0 w-100" style="z-index:0;">
+      <img src="background/wavesOpacity.svg" alt="" style="width:100%;height:auto;display:block;">
+    </div>
+
     <!-- Greeting -->
-    <div class="container text-center mt-3">
+    <div class="container text-center mt-3 position-relative" style="z-index:1;">
       <h1 class="greetingfont text-white">Hello, Sunny</h1>
       <p class="greetfontfoot lead text-white">I hope you liked the gift. — it’s from the heart.</p>
 
@@ -51,9 +56,10 @@
       </div>
     </div>
 
-
-
-
+    <!-- Bottom wave decoration using SVG file -->
+    <div class="wave-bottom">
+      <img src="background/wavesOpacity.svg" alt="" style="width:100%;height:auto;display:block;rotate:180deg;">
+    </div>
 
     <!-- js area -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

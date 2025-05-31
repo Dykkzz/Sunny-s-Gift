@@ -162,3 +162,28 @@ body::-webkit-scrollbar {
   font-weight: normal;
   font-style: normal;
 }
+
+/* filepath: d:\Special website for sunny's gift\index.css */
+.wave-top img,
+.wave-bottom img {
+  opacity: 0.3;
+}
+
+.wave-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+  line-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.2;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hidden-text.show~.wave-bottom {
+  /* This selector works if .wave-bottom is a sibling after .hidden-text */
+  transform: translateY(120px);
+  /* Move down by the height of the revealed text */
+}

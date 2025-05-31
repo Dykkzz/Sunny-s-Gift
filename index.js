@@ -13,13 +13,17 @@ function showMultipleAlerts() {
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("revealBtn");
   const hiddenText = document.getElementById("hiddenText");
+  const waveBottom = document.querySelector('.wave-bottom');
 
   btn.addEventListener("click", function () {
     const isVisible = hiddenText.classList.contains("show");
     hiddenText.classList.toggle("show");
     if (!isVisible) {
-      alert("SCROLL DOWN PLEASE :)");
+      alert("Hello from the middle button!");
       hiddenText.scrollIntoView({ behavior: "smooth", block: "start" });
+      waveBottom.style.transform = "translateY(120px)";
+    } else {
+      waveBottom.style.transform = "translateY(0)";
     }
   });
 
